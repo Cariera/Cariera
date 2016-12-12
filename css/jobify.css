@@ -642,6 +642,12 @@ li {
 .pt-15 {
   padding-top: 15px;
 }
+.pt-35 {
+  padding-top: 35px;
+}
+.pb-35 {
+  padding-bottom: 35px;
+}
 .pb-15 {
   padding-bottom: 15px;
 }
@@ -653,6 +659,19 @@ li {
 }
 .rounded {
   border-radius: .45rem;
+}
+.navbar-custom .nav li a.rounded {
+  border-radius: 3rem;
+  padding: 15px 25px;
+}
+.navbar-custom .nav li a.postJob {
+  color: #fed136;
+  background-color: transparent;
+}
+.navbar-custom .nav li a.postJob:hover {
+  background-color: #fed136;
+  border-color: #fed136;
+  color: #fff;
 }
 .btn.rounded {
   border-radius: 2rem;

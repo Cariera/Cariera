@@ -69,16 +69,17 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Courses</a>
+                        <a class="page-scroll" href="#popular_categories">Categories</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#employeeModal" data-toggle="modal" class="btn btn-primary rounded postJob">Post a job</a></li>
                     <li class="active">
                         <!-- Button trigger modal -->
-                        <a data-toggle="modal" href="#loginModal" data-backdrop="true" class="btn btn-primary login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                        <a data-toggle="modal" href="#loginModal" data-backdrop="true" class="btn btn-primary rounded ml-15"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
                     </li>
                 </ul>
             </div>
@@ -101,19 +102,19 @@
                         <form method="POST" action="" class="col-lg-10" id="loginForm">
                             <div class="form-group">
                                 <label for="emai">Email address</label>
-                                <input type="email" class="form-control" id="emai" aria-describedby="emailHelp" placeholder="Your email" autofocus="autofocus">
+                                <input type="email" class="form-control" name="email" id="emai" aria-describedby="emailHelp" placeholder="Your email" autofocus="autofocus">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Your password">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Your password">
                             </div>
                             <input class="btn btn-primary col-lg-12" name="commit" type="submit" value="Sign in to your account">
                         </form>
                     </div> 
                 </div>
                 <div class="modal-footer">
-                    <p class="text-center">New here? <a data-toggle="modal" data-dismiss="modal" href="#signupModal" data-backdrop="true">Create an Envato account</a></p>
+                    <p class="text-center">New here? <a data-toggle="modal" data-dismiss="modal" href="#signupModal" data-backdrop="true">Create an Jobify account</a></p>
                 </div>
             </div>
         </div>
@@ -134,21 +135,75 @@
                         <form method="POST" action="" class="col-lg-10" id="loginForm">
                             <div class="form-group">
                                 <label for="fName">First name</label>
-                                <input type="text" class="form-control" id="fName" placeholder="Your first name" autofocus="autofocus">
+                                <input type="text" class="form-control" name="fName" id="fName" placeholder="Your first name" autofocus="autofocus">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="lName">Last name</label>
-                                <input type="text" class="form-control" id="lName" placeholder="Your last name">
+                                <input type="text" class="form-control" name="lName" id="lName" placeholder="Your last name">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="emai">Email address</label>
-                                <input type="email" class="form-control" id="emai" aria-describedby="emailHelp" placeholder="Your email">
+                                <input type="email" class="form-control" name="email" id="emai" aria-describedby="emailHelp" placeholder="Your email">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <p class="terms center">By creating an account you agree to our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</p>
-                            <input class="btn btn-primary col-lg-12" name="commit" type="submit" value="Set up your Envato account">
+                            <input class="btn btn-primary col-lg-12" name="commit" type="submit" value="Set up your Jobify account">
+                        </form>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center">Already got an account? <a data-toggle="modal" data-dismiss="modal" href="#loginModal" data-backdrop="true">Sign in here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post a job Modal -->
+    <div class="modal fade" id="employeeModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <img src="img/logo.png" alt="Jobify Logo" width="130px">
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center">Great to see you here!</h3>
+                    <p class="text-center">Let’s set up your account in just a couple of steps.</p>
+                    <div class="row">
+                        <form method="POST" action="" class="col-lg-10" id="loginForm">
+                            <div class="form-group">
+                                <label for="country">Select your country</label>
+                                <select class="form-control">
+                                    <option>Bulgaria</option>
+                                    <option>France</option>
+                                    <option>Italy</option>
+                                    <option>Russia</option>
+                                    <option>Ukraine</option>
+                                </select>
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="">What is your organization</label>
+                                <div class="checkbox">
+                                    <label for="self-emoployed">
+                                        <input type="checkbox" value="" name="self-emoployed" id="self-emoployed">
+                                        Self-Employed
+                                    </label>
+                                    <label for="state">
+                                        <input type="checkbox" value="" name="self-emoployed" id="state">
+                                        State/Common 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="eik">EIK / BULSTAT</label>
+                                <input type="text" class="form-control" id="eik" name="eik" placeholder="Your last name">
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <p class="terms center">By creating an account you agree to our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</p>
+                            <input class="btn btn-primary col-lg-12" name="commit" type="submit" value="Set up your Jobify account">
                         </form>
                     </div> 
                 </div>
@@ -165,13 +220,13 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Looking for a job?</div>
                 <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#popular_categories" class="page-scroll btn btn-xl">Find work</a>
+                <a href="#featured-jobs" class="page-scroll btn btn-xl">Find work</a>
             </div>
         </div>
     </header>
 
     <!-- Featured Jobs Section -->
-    <section class="featured_jobs">
+    <section class="featured_jobs" id="featured-jobs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -354,15 +409,15 @@
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12">
                     <h2 class="section-heading">Our Amazing Team</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-12">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="" width="225px">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle col-xs-6" alt="" width="225px">
                         <h4>Nicky Andreev</h4>
                         <p class="text-muted">PHP Developer</p>
                         <ul class="list-inline social-buttons">
@@ -375,9 +430,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-12">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="Daniel Grigorov Photo" width="225px">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle col-xs-6" alt="Daniel Grigorov Photo" width="225px">
                         <h4>Daniel Grigorov</h4>
                         <p class="text-muted">Front-End Developer</p>
                         <ul class="list-inline social-buttons">
@@ -390,9 +445,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-xs-12">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="Kristiyan Kradjov Photo" width="225px">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle col-xs-6" alt="Kristiyan Kradjov Photo" width="225px">
                         <h4>Kristiyan Karadjov</h4>
                         <p class="text-muted">WIKI Developer</p>
                         <ul class="list-inline social-buttons">
@@ -549,12 +604,13 @@
     </section>
 
     <!-- Clients Aside -->
-    <aside class="clients">
+    <aside class="clients bg-light-gray pt-35 pb-35">
         <div class="container">
             <div class="row">
+                <h1 class="section-heading">Clients &amp; Partners</h1>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/Devision-Logo.png" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/Webit-Logo.png" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
