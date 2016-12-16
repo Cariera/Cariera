@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Daniel Grigorov">
 
-    <title>Jobify</title>
+    <title>Jobify | Home</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,20 +48,23 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav col-sm-7">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">For Candidates <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Candidates <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a class="page-scroll" href="#featured-jobs">Jobs</a></li>
+                            <li><a class="page-scroll" href="#">Another action</a></li>
+                            <li><a class="page-scroll" href="#">Something else here</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">For Employees <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Companies <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -72,7 +75,7 @@
                         <a class="page-scroll" href="#popular_categories">Categories</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="contacts.html">Contacts</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -199,7 +202,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="eik">EIK / BULSTAT</label>
-                                <input type="text" class="form-control" id="eik" name="eik" placeholder="Your last name">
+                                <input type="text" class="form-control" id="eik" name="eik" placeholder="">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <p class="terms center">By creating an account you agree to our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</p>
@@ -346,11 +349,11 @@
                                     <td colspan="5">
                                         <nav class="pull-right">
                                           <ul class="pager pagination">
-                                            <li class="previous"><a href="#" class="mr-15"><span aria-hidden="true">&larr;</span> Older</a></li>
+                                            <li class="previous"><a href="#" class="mr-15 btn btn-warning"><span aria-hidden="true">&larr;</span> Older</a></li>
                                             <li><a href="#">1</a></li>
                                             <li><a href="#">2</a></li>
                                             <li><a href="#">3</a></li>
-                                            <li class="next"><a href="#" class="ml-15">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                                            <li class="next"><a href="#" class="ml-15 btn btn-warning">Newer <span aria-hidden="true">&rarr;</span></a></li>
                                           </ul>
                                         </nav>
                                     </td>
@@ -585,11 +588,11 @@
                                     <td colspan="5">
                                         <nav class="pull-right">
                                           <ul class="pager pagination">
-                                            <li class="previous"><a href="#" class="mr-15"><span aria-hidden="true">&larr;</span> Older</a></li>
+                                            <li class="previous"><a href="#" class="mr-15 btn btn-warning"><span aria-hidden="true">&larr;</span> Older</a></li>
                                             <li><a href="#">1</a></li>
                                             <li><a href="#">2</a></li>
                                             <li><a href="#">3</a></li>
-                                            <li class="next"><a href="#" class="ml-15">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                                            <li class="next"><a href="#" class="ml-15 btn btn-warning">Newer <span aria-hidden="true">&rarr;</span></a></li>
                                           </ul>
                                         </nav>
                                     </td>
@@ -604,7 +607,7 @@
     </section>
 
     <!-- Clients Aside -->
-    <aside class="clients bg-light-gray pt-35 pb-35">
+    <aside class="clients col-xs-12 bg-light-gray pt-35 pb-35">
         <div class="container">
             <div class="row">
                 <h1 class="section-heading">Clients &amp; Partners</h1>
@@ -633,7 +636,7 @@
     </aside>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="col-xs-12">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -677,13 +680,13 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="col-lg-12 bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 col-lg-4">
                     <span class="copyright">Copyright &copy; Jobify (NBU Students Project)</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 col-lg-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -693,7 +696,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 col-lg-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
