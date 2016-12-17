@@ -103,12 +103,12 @@
                     <h3 class="text-center">Great to have you back!</h3>
                     <div class="row">
                         <form method="POST" action="" class="col-lg-10" id="loginForm">
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="emai">Email address</label>
                                 <input type="email" class="form-control" name="email" id="emai" aria-describedby="emailHelp" placeholder="Your email" autofocus="autofocus">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" name="password" id="password" placeholder="Your password">
                             </div>
@@ -136,17 +136,17 @@
                     <p class="text-center">Let’s set up your account in just a couple of steps.</p>
                     <div class="row">
                         <form method="POST" action="" class="col-lg-10" id="loginForm">
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="fName">First name</label>
                                 <input type="text" class="form-control" name="fName" id="fName" placeholder="Your first name" autofocus="autofocus">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="lName">Last name</label>
                                 <input type="text" class="form-control" name="lName" id="lName" placeholder="Your last name">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="emai">Email address</label>
                                 <input type="email" class="form-control" name="email" id="emai" aria-describedby="emailHelp" placeholder="Your email">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
@@ -176,7 +176,7 @@
                     <p class="text-center">Let’s set up your account in just a couple of steps.</p>
                     <div class="row">
                         <form method="POST" action="" class="col-lg-10" id="loginForm">
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="country">Select your country</label>
                                 <select class="form-control">
                                     <option>Bulgaria</option>
@@ -187,7 +187,7 @@
                                 </select>
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="">What is your organization</label>
                                 <div class="checkbox">
                                     <label for="self-emoployed">
@@ -200,7 +200,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-lg-6 col-md-6 col-xs-6">
                                 <label for="eik">EIK / BULSTAT</label>
                                 <input type="text" class="form-control" id="eik" name="eik" placeholder="Your last name">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
@@ -228,36 +228,31 @@
         <div class="container">
             <form class="form-horizontal">
                 <fieldset disabled>
-                    <div class="form-group">
-                        <label for="country" class="col-sm-2 control-label">Country</label>
-                        <div class="col-sm-5">
-                            <input type="text" id="contry" name="country" class="form-control" value="Bulgaria" placeholder="">
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Country</label>
+                            <input type="text" id="country" class="form-control non-rounded input-lg" required name="country" value="Bulgaria" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="eik" class="col-sm-2 control-label">EIK / BULSTAT</label>
-                        <div class="col-sm-5">
-                            <input type="text" id="eik" name="eik" class="form-control" value="81818198" placeholder="">
+
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">EIK / BULSTAT</label>
+                            <input type="text" id="eik" class="form-control non-rounded input-lg" required name="eik" value="81818198" />
                         </div>
                     </div>
                 </fieldset>
                 <hr>
-                <div class="form-group">
-                    <label for="companyName" class="col-sm-2 control-label required">Company Name</label>
-                    <div class="col-sm-5">
-                        <input type="text" class="form-control" id="companyName" placeholder="" autofocus="autofocus">
+                <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                    <div class="col-xs-12 col-lg-12">
+                        <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Company Name</label>
+                        <input type="text" id="company-name" class="form-control non-rounded input-lg" required name="company-name" value="" />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="companyAdress" class="col-sm-2 control-label required">Company Address</label>
-                    <div class="col-sm-5">
-                        <textarea class="form-control" rows="3" name="companyAdress"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="numEmployees" class="col-sm-2 control-label required">Number of employee</label>
-                    <div class="col-sm-5">
-                        <select class="form-control">
+                <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                    <div class="col-xs-12 col-lg-12">
+                        <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy">Number of employee</label>
+                        <select class="form-control non-rounded input-lg">
                             <option>to 5</option>
                             <option>5-10</option>
                             <option>10-20</option>
@@ -267,113 +262,139 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="businessSelector" class="col-sm-2 control-label required">Business sectors <br><small id="numEmployeesHelp" class="form-text text-muted">Select max 3 business sectors, which describe your company.</small></label>
-                    <div class="col-sm-5">
-                        <select class="form-control mt-20" name="businessSelector" multiple>
-                            <option>to 5</option>
-                            <option>5-10</option>
-                            <option>10-20</option>
-                            <option>20-50</option>
-                            <option>50-100</option>
-                            <option>100-300</option>
-                        </select>
-                    </div>
-                    <label for="selectedSectors" class="tal col-sm-2 control-label pt-0">Selected sectors</label>
-                    <div class="col-sm-5">
-                        <select class="form-control" name="selectedSectors" multiple>
-                            <option></option>
-                        </select>
+                <div class="form-group col-lg-12 col-md-12 col-xs-12">
+                    <div class="col-xs-12 col-lg-12">
+                        <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy">Company Address</label>
+                        <input type="text" id="company-address" class="form-control non-rounded input-lg" required name="company-address" value="" />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="companyAdress" class="col-sm-2 control-label">Company Website</label>
-                    <div class="col-sm-5 mt-20">
-                        <input type="url" class="form-control" id="companyWebsite" placeholder="">
+                <div class="form-group col-lg-12 col-md-12 col-xs-12">
+                    <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6">
+                        <label for="businessSelector" class="col-sm-12 col-lg-12 text-left control-label navy pl-0 required">Business sectors <br><small id="numEmployeesHelp" class="form-text text-muted">Select max 3 business sectors, which describe your company.</small></label>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 pl-0">
+                            <select class="form-control mt-20 non-rounded input-lg" name="businessSelector" multiple>
+                                <option>to 5</option>
+                                <option>5-10</option>
+                                <option>10-20</option>
+                                <option>20-50</option>
+                                <option>50-100</option>
+                                <option>100-300</option>
+                            </select>
+                        </div>
                     </div>
-                    <label for="companyPhone" class="col-sm-2 control-label pt-0 tal">Company Phone</label>
-                    <div class="col-sm-5">
-                        <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="">
-                    </div>
-                </div>
-                <hr>
-                <blockquote>
-                    <h3>Administration information:</h3>
-                    <small class="form-text text-muted">
-                    This information is needed to verify the accuracy of registration and shall <strong class="text-uppercase">not be published on the site.</strong> <br>Following the publication of one or more ads Jobify administrator will contact you by phone to confirm registration
-                </small>
-                </blockquote>
-                <p class="lead">Please fill your name, position and contacts below:</p>
-                <div class="form-group">
-                    <label for="firstName" class="col-sm-2 col-lg-2 control-label required">First Name</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="lastName" class="col-sm-2 col-lg-2 control-label required">Last Name</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="">
+                    <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6">
+                        <label for="selectedSectors" class="text-left col-sm-12 col-lg-12 text-left control-label navy pl-0">Selected sectors</label>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 pl-0">
+                            <select class="form-control mt-40 non-rounded input-lg" name="selectedSectors" multiple>
+                                <option></option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="jobRole" class="col-sm-2 col-lg-2 control-label required">Job Role</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="text" class="form-control" name="jobRole" id="jobRole" placeholder="">
+                <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                    <div class="col-xs-12 col-lg-12">
+                        <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Company Website</label>
+                        <input type="text" id="company-web" class="form-control non-rounded input-lg" required name="company-web" value="" />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="jobMobile" class="col-sm-2 col-lg-2 control-label required">Job Mobile:</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="tel" class="form-control" name="jobMobile" id="jobMobile" placeholder="">
+                <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                    <div class="col-xs-12 col-lg-12">
+                        <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Company Phone</label>
+                        <input type="text" id="company-phone" class="form-control non-rounded input-lg" required name="company-phone" value="" />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="jobEmail" class="col-sm-2 col-lg-2 control-label required">Job Email</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="email" class="form-control" name="jobEmail" id="jobEmail" placeholder="">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <hr>
+                    <blockquote>
+                        <h3>Administration information:</h3>
+                        <small class="form-text text-muted">
+                            This information is needed to verify the accuracy of registration and shall <strong class="text-uppercase">not be published on the site.</strong> <br>Following the publication of one or more ads Jobify administrator will contact you by phone to confirm registration
+                        </small>
+                    </blockquote>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <p class="lead">Please fill your name, position and contacts below:</p>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">First name</label>
+                            <input type="text" class="form-control non-rounded input-lg" required name="firstName" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Last name</label>
+                            <input type="text" class="form-control non-rounded input-lg" required name="lastName" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy">Job role</label>
+                            <input type="text" class="form-control non-rounded input-lg" id="job-role" name="job-role" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Job Mobile</label>
+                            <input type="text" class="form-control non-rounded input-lg" required id="job-mobile" name="job-mobile" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Job email</label>
+                            <input type="text" class="form-control non-rounded input-lg" required id="job-email" name="job-email" placeholder="" />
+                        </div>
                     </div>
                 </div>
-                <p class="lead">Choose your username for login system:</p>
-                <div class="form-group">
-                    <label for="username" class="col-sm-2 col-lg-2 control-label required">Username</label>
-                    <div class="col-sm-4 col-lg-5">
-                        <input type="text" class="form-control" name="username" id="username" placeholder="">
-                        <small id="numEmployeesHelp" class="form-text text-muted">For example: ivan55, speedex.</small>
+
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <p class="lead">Choose your username for login system:</p>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Username</label>
+                            <input type="text" class="form-control non-rounded input-lg" required id="username" name="username" placeholder="" />
+                            <small id="numEmployeesHelp" class="form-text text-muted">For example: ivan55, speedex.</small>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Password</label>
+                            <input type="password" class="form-control non-rounded input-lg" required id="password" name="password" placeholder="" />
+                            <small id="numEmployeesHelp" class="form-text text-muted">Choose password at least 6 symbols, different from your username.</small>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Re-Password</label>
+                            <input type="password" class="form-control non-rounded input-lg" required id="re-password" name="re-password" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <hr>
+                    </div>
+                    
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-12 control-label pl-0 text-left navy required">Captcha</label>
+                            <img src="https://www.jobs.bg/protect_image.php?key=60650a408ebfecb37a3b39ecd84b06bc" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-xs-12 col-lg-12">
+                            <label class="col-xs-12 col-lg-6 control-label pl-0 text-left navy required">Enter Captcha</label>
+                            <input type="text" class="form-control non-rounded input-lg" required id="enter-captcha" name="enter-captcha" placeholder="" />
+                            <small id="numEmployeesHelp" class="form-text text-muted">Re-write words/numbers above on the blue background.</small>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6 col-xs-6">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Registration" />
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-2 col-lg-2 control-label required">Password</label>
-                    <div class="col-sm-5 col-lg-5">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="">
-                        <small id="numEmployeesHelp" class="form-text text-muted">Choose password at least 6 symbols, different from your username.</small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="re-password" class="col-sm-2 col-lg-2 control-label required">Re-Password</label>
-                    <div class="col-sm-5 col-lg-5">
-                        <input type="password" class="form-control" name="re-password" id="re-password" placeholder="">
-                    </div>
-                </div>
-                <hr>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 col-lg-2 control-label required">Captcha</label>
-                    <div class="col-sm-5 col-lg-2">
-                        <img src="https://www.jobs.bg/protect_image.php?key=60650a408ebfecb37a3b39ecd84b06bc" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="enterCaptcha" class="col-sm-2 col-lg-2 control-label required">Enter Captcha</label>
-                    <div class="col-sm-5 col-lg-5">
-                        <input type="text" class="form-control" name="enterCaptcha" id="enterCaptcha" placeholder="">
-                        <small id="numEmployeesHelp" class="form-text text-muted">Re-write words/numbers above on the blue background.</small>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-5">
-                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Registration" />
-                    </div>
-                </div>
+                
             </form>
         </div>
     </section>
